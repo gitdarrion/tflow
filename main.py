@@ -1,6 +1,7 @@
+import os
 import tensorflow as tf
 
-tf.logging.set_verbosity(tf.logging.ERROR)
+os.environ["TF_CPP_MIN_LOG_LEVEL"]="2"
 
 """ Prints object information. """
 node1 = tf.constant(3, dtype=tf.float32)
